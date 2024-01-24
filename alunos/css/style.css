@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Work Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin: 100px;
+}
+
+#partesExe {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: auto;
+}
+
+a#home {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 40px 30px;
+  border: 3px solid #72c390;
+  background-color: white;
+  color: #72c390;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.25s all ease-in-out;
+}
+
+button:hover {
+  color: white;
+  background-color: #72c390;
+}
+
+.flexContainer button {
+  padding: 0;
+}
+
+.flexContainer h2 {
+  margin: 20px auto;
+}
+
+.flexContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.esq {
+  flex: 0 0 40%;
+  max-width: 40%;
+  background-color: white;
+}
+
+.dir {
+  flex: 0 0 60%;
+  max-width: 60%;
+  background-color: rgb(114, 195, 144);
+  display: flex;
+  align-self: stretch;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#avatarConjunto {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.conjuntos {
+  width: 200px;
+  height: 204px;
+  margin: auto;
+  position: relative;
+  border: 3px solid transparent;
+}
+
+.avatarCaras {
+  width: 120px;
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 60px);
+  top: 26px;
+}
+
+.cabelosConj {
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+}
+
+.oculosConj {
+  position: absolute;
+  top: 68px;
+  left: calc(50% - 59px);
+  width: 118px;
+  z-index: 3;
+}
+
+#avatar {
+  position: absolute;
+  top: 48px;
+  left: calc(50% - 80px);
+  width: 160px;
+}
+
+#cabeloAvatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+
+#oculosAvatar {
+  display: none;
+  position: absolute;
+  top: 98px;
+  left: 62px;
+  width: 175px;
+}
+
+select#oculos {
+  border: 2px solid #72c390;
+  border-radius: 5px;
+}
+
+.inputsRadio {
+  display: flex;
+  margin: 0 0 40px 0;
+  column-gap: 20px;
+  row-gap: 10px;
+  justify-content: flex-start;
+  flex-flow: row;
+  flex-grow: 3;
+  flex-flow: wrap;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+#h2_avatar {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#h2_avatar a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.input_color {
+  width: 45px;
+  height: 47px;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid #72c390;
+  margin-bottom: 30px;
+}
+
+.input_color::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: #72c390;
+  height: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: 0px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+/****** Avatar **********/
+
+/***** Parte 1 ****/
+
+.cabelos {
+  background-color: #00000032;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: none;
+}
+
+#cabeloLaranja {
+  background-image: url("../assets/cabelos/cabelo1.png");
+}
+
+#cabeloAzul {
+  background-image: url("../assets/cabelos/cabelo2.png");
+}
+
+#cabeloAmarelo {
+  background-image: url("../assets/cabelos/cabelo3.png");
+}
+
+#cabeloPreto {
+  background-image: url("../assets/cabelos/cabelo4.png");
+}
+
+.tomClaro {
+  background-image: url("../assets/avatar1.png");
+  background-color: #00000032;
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 20px;
+}
+
+.tomEscuro {
+  background-image: url("../assets/avatar2.png");
+  background-color: #00000032;
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 20px;
+}
+
+.avatarBtns {
+  max-width: 100px;
+  height: 100px;
+  flex: 0 0 100px;
+}
+
+.peleClara {
+  background-color: #f8bc97;
+  border: none;
+  border-radius: 20px;
+}
+
+.peleEscura {
+  background-color: #c84417;
+  border: none;
+  border-radius: 20px;
+}
+
+.corCabelo {
+  background-color: #c84417;
+  border: none;
+  border-radius: 20px;
+}
+
+.cabelo_ruivo {
+  background-color: #eb600c;
+  border: none;
+  border-radius: 20px;
+}
+
+.cabelo_azul {
+  background-color: #3192d0;
+  border: none;
+  border-radius: 20px;
+}
+
+.cabelo_loiro {
+  background-color: #efcd65;
+  border: none;
+  border-radius: 20px;
+}
+
+.cabelo_preto {
+  background-color: #3c3c3b;
+  border: none;
+  border-radius: 20px;
+}
+
+.btnComOculos {
+  background-image: url("../assets/oculos.png");
+  background-color: #00000032;
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 20px;
+}
+
+.btnSemOculos {
+  background-image: url("../assets/sem_oculos.png");
+  background-color: #00000032;
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 20px;
+}
+
+/****** DecaLLustrator****/
+
+.decallustrator {
+  flex: 0 0 15%;
+  background-color: white;
+  width: 15%;
+}
+
+.decallustrator button {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+  font-size: 1rem;
+  display: block;
+}
+
+.decallustrator_dir {
+  flex: 0 0 85%;
+  background-color: #72c390;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#artboard {
+  background-color: white;
+  width: 1200px;
+  height: 90vh;
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+  position: relative;
+}
+
+.div_icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+
+.div_icons > button {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0.1rem 15px;
+}
+
+#texto_inserido {
+  max-width: 100px;
+}
+
+#text_left {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#largurarTexto {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+#menu_alinhamento,
+#menu_corFundo,
+#menu_corLetra,
+#menu_Texto {
+  display: none;
+}

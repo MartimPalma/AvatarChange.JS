@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LM3 - Exercício 13</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="flexContainer">
+      <div class="flexChild esq">
+        <a href="index.html" id="home">
+          <h2>Avatar</h2>
+        </a>
+        <div class="flexColumn">
+          <label>Tom da pele</label>
+          <div class="inputsRadio">
+            <button id="corPeleClara" class="avatarBtns tomClaro"></button>
+            <button id="corPeleEscura" class="avatarBtns tomEscuro"></button>
+          </div>
+          <label>Cabelo</label>
+          <div class="inputsRadio">
+            <button id="cabeloLaranja" class="cabelos avatarBtns"></button>
+            <button id="cabeloAzul" class="cabelos avatarBtns"></button>
+            <button id="cabeloAmarelo" class="cabelos avatarBtns"></button>
+            <button id="cabeloPreto" class="cabelos avatarBtns"></button>
+          </div>
+          <label>Óculos</label>
+          <div class="inputsRadio">
+            <button id="comOculos" class="avatarBtns btnComOculos"></button>
+            <button id="semOculos" class="avatarBtns btnSemOculos"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flexChild dir">
+        <div id="avatarConjunto">
+          <img id="avatar" src="./assets/avatar_default.png" />
+          <img id="cabeloAvatar" src="./assets/cabelos/cabelo0.png" />
+          <img id="oculosAvatar" src="./assets/oculos.png" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/ex13_2.js"></script>
+  </body>
+</html>
